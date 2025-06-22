@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System</title>
+    <style>
+        body {
+            background: #f5f7fa;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            color: #2d3e50;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 16px 28px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(52, 152, 219, 0.1);
+        }
+        button:hover {
+            background: #005187;
+            transform: translateY(-2px) scale(1.05);
+        }
+       body {
+    background: linear-gradient(
+        45deg,
+        #ff6b6b,   
+        #f06595,   
+        #845ef7,   
+        #5c7cfa,  
+       
+        #51cf66,   
+        #ffd43b    
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>Course Registration </h1>
+    <div class="button-group">
+        <a href="./register.html"><button type="button">Register a Course</button></a>
+        <a href="./available.html"><button type="button">Available Course</button></a>
+        <a href="./enrolled.html"><button type="button">Enrolled Student</button></a>
+    </div>
+</body>
+</html>

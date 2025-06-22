@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register a Course</title>
+    <style>
+        body {
+            background: #f2f6fc;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 28px;
+        }
+        form {
+            background: #fff;
+            padding: 32px 36px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            min-width: 320px;
+        }
+        label {
+            color: #34495e;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        input[type="text"], select {
+            padding: 10px 12px;
+            border: 1px solid #bfc9d1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: #f8fafb;
+            margin-bottom: 8px;
+            transition: border 0.2s;
+        }
+        input[type="text"]:focus, select:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        button[type="submit"] {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 12px 0;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: background 0.2s, transform 0.2s;
+        }
+        button[type="submit"]:hover {
+            background: #217dbb;
+            transform: translateY(-2px) scale(1.03);
+        }
+        body {
+    background: linear-gradient(
+        45deg,
+        #ff6b6b,   
+        #f06595,   
+        #845ef7,   
+        #5c7cfa,   
+       
+        #51cf66,   
+        #ffd43b    
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h2>Start with an exciting course</h2>
+    <form action="http://localhost:8080/courses/register" method="post">
+        <label for="name">Enter your Name</label>
+        <input type="text" name="name" id="name">
+
+        <label for="emailId">Enter your Email</label>
+        <input type="text" name="emailId" id="emailId">
+
+        <label for="course">Enter your Course</label>
+        <select name="courName" id="course">
+            <option value="Java">Java</option>
+            <option value="Html Css">Html Css</option>
+            <option value="Spring Boot">Spring Boot</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

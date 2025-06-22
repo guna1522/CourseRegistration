@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Course</title>
+    <script src="./myscript.js"></script>
+    <style>
+        body {
+            background: #f8fafc; 
+            margin: 0;
+            padding: 40px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse; 
+            width: 80%;
+            margin: 0 auto;
+            border: 2px solid #222; 
+            background: #fff;
+        }
+
+        th, td {
+            border: 1px solid #222; 
+            padding: 14px 18px;
+            text-align: left;
+            font-size: 1em;
+        }
+
+        th {
+            background: #1976d2;
+            color: #fff;
+            font-size: 1.1em;
+            letter-spacing: 0.04em;
+        }
+
+        tr:hover {
+            background: #e3f2fd;
+            transition: background 0.2s;
+        }
+
+        @media (max-width: 700px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                padding: 10px 8px;
+            }
+            th {
+                position: sticky;
+                top: 0;
+            }
+        }
+       body {
+    background: linear-gradient(
+        45deg,
+        #ff6b6b,   
+        #f06595,   
+        #845ef7,   
+        #5c7cfa,   
+       
+        #51cf66,   
+        #ffd43b   
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Course Id</th>
+                <th>Course Name</th>
+                <th>Trainer</th>
+                <th>Duration in week</th>
+            </tr>
+        </thead>
+        <tbody id="coursetable">
+            
+        </tbody>
+    </table>
+    <script>
+        window.onload = function() {
+            show(); 
+        }
+    </script>
+</body>
+</html>
